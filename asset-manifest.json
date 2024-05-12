@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/landingNikFreeze.io/static/css/main.d09a8c61.css",
+    "main.js": "/landingNikFreeze.io/static/js/main.a95c2735.js",
+    "static/js/453.baae0ab6.chunk.js": "/landingNikFreeze.io/static/js/453.baae0ab6.chunk.js",
+    "index.html": "/landingNikFreeze.io/index.html",
+    "main.d09a8c61.css.map": "/landingNikFreeze.io/static/css/main.d09a8c61.css.map",
+    "main.a95c2735.js.map": "/landingNikFreeze.io/static/js/main.a95c2735.js.map",
+    "453.baae0ab6.chunk.js.map": "/landingNikFreeze.io/static/js/453.baae0ab6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d09a8c61.css",
+    "static/js/main.a95c2735.js"
+  ]
+}
