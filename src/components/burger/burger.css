@@ -1,0 +1,31 @@
+.burger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.burgerLine {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.burger.active .burgerLine:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.burger.active .burgerLine:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .burgerLine:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}

@@ -1,0 +1,17 @@
+.app {
+  text-align: center;
+  height: 100vh;
+}
+
+.main-wrapper{
+  padding: 0 30px;
+}
+
+.dark{
+  background-color: rgb(55, 57, 57);
+  transition: 0.4s;
+}
+.light{
+  background-color: white;
+  transition: 0.4s;
+}

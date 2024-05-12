@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-container {
+    width: 100%;
+
+}
+
+
+
+.nav-menu-wrapper {}
+
+.nav-menu {}
+
+.nav-menu-item {
+    list-style: none;
+}
