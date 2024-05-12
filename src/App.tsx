@@ -16,16 +16,19 @@ function App() {
     const {theme} = useSelector(selectTheme)
 
   return (
-      <div className={`app ${theme}`}>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Main/>} />
-          <Route path='' element='' />
-        </Routes>
-        <Footer />
-      </Router>
+    <div className="App">
+      <Main/>
     </div>
+    //   <div className={`app ${theme}`}>
+    //   <Router>
+    //     <Header />
+    //     <Routes>
+    //       <Route path='/' element={<Main/>} />
+    //       <Route path='' element='' />
+    //     </Routes>
+    //     <Footer />
+    //   </Router>
+    // </div>
     
 
   );
