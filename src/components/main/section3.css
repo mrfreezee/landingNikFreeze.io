@@ -1,0 +1,290 @@
+.section3 {
+    
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /* max-height: 1000px; */
+    text-align: center;
+    /* padding-top: 4%; */
+    transform-style: inherit;
+    font-size: 32px;
+}
+.section3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top: -100%; */
+    z-index: 1;
+    transform-origin: center;
+    /* min-height: 100vh; */
+    height: 100%;
+    background-image: url("https://i.ibb.co/mHYYTWP/futuristic-city-sci-fi-digital-art-4k-wallpaper-uhdpaper-com-822-3-a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition: 1s;
+    /* Параллакс */
+    transform: translateZ(-1px) scale(2);
+  }
+.titlesect3 {
+    font-size: 100px;
+    /* position: absolute; */
+    color: rgb(61, 57, 57);
+    z-index: 3;
+    font-weight: 600;
+    font-family: "Lilita One", sans-serif;
+    /* top: 20px; */
+    /* right: 300px; */
+    background: linear-gradient(45deg, #003ad9, #f308ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        filter: drop-shadow(-4px 3px 1px rgb(24, 24, 24));
+            -webkit-text-stroke: 3px #000000be;
+}
+
+
+
+.stackWrap{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -7px;
+}
+
+.list {
+    text-align: start;
+    /* margin-left: 40px; */
+    margin-top: 50px;
+    /* width: 750px; */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid white;
+    position: relative;
+    z-index: 5;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 10px black;
+}
+
+
+@keyframes listVis {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes listVis2 {
+    0% {
+        opacity: 0;
+        transform: scale(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+
+}
+
+.visibleLI2 {
+    opacity: 1;
+    transform: scale(100%);
+    animation: listVis2 1.5s ease-in-out;
+
+}
+
+.listIem {
+    margin-bottom: 30px;
+    z-index: 3;
+    position: relative;
+    opacity: 0;
+
+}
+
+
+.visibleLI {
+    opacity: 1;
+    transform: translateX(0);
+    animation: listVis 1.5s ease-in-out;
+
+}
+
+.listIem:nth-child(1),
+.listIem:nth-child(3),
+.listIem:nth-child(5) {
+    margin-left: 80px;
+}
+
+
+.spanlist {
+    font-size: 60px;
+    font-weight: 900;
+    background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 2px, transparent 0, transparent 10px);
+    background-repeat: "repeat";
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 2px #ffffff;
+    margin-right: 20px;
+}
+
+.stackName {
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-stroke: 3px #000000;
+    filter: drop-shadow(-7px 8px 2px rgb(0, 0, 0));
+    background: linear-gradient(45deg, #001a8e, #f308e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.icnw {
+    opacity: 0;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    /* top: 150px; */
+    /* right: 200px; */
+
+}
+
+@keyframes icn{
+    0%{
+        opacity: 0;
+        transform: rotate(180deg) scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+.visicnw{
+    opacity: 1;
+    animation: icn 1.5s ease-in-out;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 150px;
+    /* left: 50%; */
+    transform-origin: center;
+}
+
+.imgW {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 100%;
+    background-color: #1f2124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ic1 {
+    width: 86px;
+    height: 86px;
+}
+
+.i1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.i2 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.i3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.i4 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.i5 {
+    top: 13%;
+    right: 13%;
+    /* transform: translateY(-20%); */
+}
+
+.i6 {
+    top: 13%;
+    left: 13%;
+}
+
+.i7 {
+    bottom: 13%;
+    left: 13%
+}
+
+.i8 {
+    bottom: 13%;
+    right: 13%;
+}
+
+.i9 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bckgr2 {
+    position: absolute;
+    background: linear-gradient(226deg, rgba(0, 0, 0, 0) 0%, rgb(0 0 0) 100%);
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.section-container{
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container3{
+    display: flex;
+    margin-top: 150px;
+}

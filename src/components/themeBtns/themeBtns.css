@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     transition: 0.3s;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 .iconTheme{
     width: 40px;
