@@ -8,15 +8,16 @@
     transition: 0.3s;
 }
 
-.backgr2{
+.backgr2 {
     background: rgba(255, 255, 255, 0);
     /* transition: 0.3s; */
 
 
 }
-.lolz{
+
+.lolz {
     width: 100px;
-    height: 100px; 
+    height: 100px;
     position: absolute;
     left: 47%;
     top: 90px;
@@ -24,17 +25,17 @@
     z-index: 10;
 }
 
-.section1{
+.section1 {
     box-sizing: border-box;
-  height: 100vh;
-  /* max-height: 1000px; */
-  text-align: center;
-  /* padding-top: 4%; */
-  transform-style: inherit;
-  width: 100vw;
-  font-size: 32px;
-  position: relative;
-  z-index: 10;
+    height: 100vh;
+    /* max-height: 1000px; */
+    text-align: center;
+    /* padding-top: 4%; */
+    transform-style: inherit;
+    width: 100vw;
+    font-size: 32px;
+    position: relative;
+    z-index: 10;
 }
 
 .section1::before {
@@ -56,7 +57,13 @@
     transition: 1s;
     /* Параллакс */
     transform: translateZ(-1px) scale(2);
-  }
+}
+
+.container1 {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
 
 
 .title-wrapper {
@@ -64,11 +71,14 @@
     display: flex;
     justify-content: center;
     z-index: 2;
-    height: 100vh;
+    height: 100%;
     /* overflow-y: auto; */
     width: 100%;
     overflow: hidden;
-    
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+
 }
 
 .title {
@@ -80,20 +90,23 @@
     /* margin-top: 70px; */
     -webkit-text-stroke: 1px #0c0c0cbe;
     /* margin-left: 80px; */
-    padding-top: 100px;
+    /* padding-top: 100px; */
     position: relative;
     top: 0;
     left: 0;
     width: 70%;
-    height: 100%;
+    height: 60%;
     z-index: -1;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .titlespan {
     font-size: 110px;
     font-weight: 700;
-    position: absolute;
+    /* position: absolute; */
     background: linear-gradient(45deg, #cf1313, #004ebb, #f308ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -102,28 +115,40 @@
     top: 145px;
     left: 0;
     z-index: -2px;
-    transform: translateZ(-2px);
+    /* transform: translateZ(-2px); */
     box-sizing: border-box;
- 
-  /* font-size: 32px; */
+
+    /* font-size: 32px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
 
 .name {
-    position: absolute;
+    /* position: absolute; */
     /* width: 650px; */
     top: 350px;
     right: 0;
     /* transform: translateZ(0); */
-
-
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .spanDev {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+
     left: 50%;
-    transform: translate(-50%, 0);
+    /* transform: translate(-50%, 0); */
     top: 250px;
+    width: 100%;
+    justify-content: center;
 }
 
 
@@ -167,10 +192,12 @@
     .titlespan {
         font-size: 80px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 230px;
     }
-    .name{
+
+    .name {
         top: 310px;
     }
 }
@@ -188,12 +215,14 @@
     .titlespan {
         font-size: 70px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 220px;
     }
-    .name{
+
+    .name {
         top: 290px;
-        
+
     }
 }
 
@@ -207,11 +236,17 @@
     .titlespan {
         font-size: 70px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 220px;
     }
-    .name{
+
+    .name {
         top: 290px;
+    }
+    svg {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -225,16 +260,16 @@
     .titlespan {
         font-size: 60px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 220px;
     }
-    .name{
+
+    .name {
         top: 290px;
     }
-    svg{
-        width: 80px;
-        height: 80px;
-    }
+
+    
 }
 
 @media(max-width: 770px) {
@@ -247,17 +282,21 @@
     .titlespan {
         font-size: 50px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 220px;
     }
-    .name{
+
+    .name {
         top: 290px;
     }
-    svg{
+
+    svg {
         width: 70px;
         height: 70px;
     }
 }
+
 @media(max-width: 700px) {
 
     .title {
@@ -268,15 +307,44 @@
     .titlespan {
         font-size: 40px;
     }
-    .spanDev{
+
+    .spanDev {
         top: 190px;
     }
-    .name{
+
+    .name {
         top: 230px;
         font-size: 30px;
     }
-    svg{
+
+    svg {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .title {
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    .titlespan {
+        font-size: 30px;
+    }
+
+    .spanDev {
+        top: 190px;
+    }
+
+    .name {
+        top: 230px;
+        font-size: 20px;
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
     }
 }
