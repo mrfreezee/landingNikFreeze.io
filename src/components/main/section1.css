@@ -27,7 +27,7 @@
 .section1{
     box-sizing: border-box;
   height: 100vh;
-  max-height: 1000px;
+  /* max-height: 1000px; */
   text-align: center;
   /* padding-top: 4%; */
   transform-style: inherit;

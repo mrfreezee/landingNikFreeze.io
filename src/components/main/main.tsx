@@ -7,6 +7,8 @@ import './main.css'
 import './section1.css'
 import './section2.css'
 import './section3.css'
+import './section4.css'
+
 
 
 import { ThemeBtns } from '../themeBtns/themeBtns';
@@ -157,6 +159,8 @@ export const Main = () => {
 
             </div>
             <div className="section3 " ref={sect2}>
+            <div className={theme === 'dark' ? 'backgr' : 'backgr backgr2'}></div>
+
                 {/* <div className='bckgr2'></div> */}
                 {/* <img className='imgsect3' src='https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' /> */}
                 <div className='section-container container3'>
@@ -213,6 +217,9 @@ export const Main = () => {
 
 
                 </div>
+
+            </div>
+            <div className="section4">
 
             </div>
         </div>
