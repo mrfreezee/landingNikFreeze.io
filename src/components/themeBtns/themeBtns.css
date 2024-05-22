@@ -51,8 +51,7 @@
 
 
 .themeBtnsLight{
-    background-color: #c841b5aa;
-
+    background-color: #c423add4;
 }
 
 .switch {
@@ -74,8 +73,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #80858B;
-    -webkit-transition: .4s;
+    background-color: #a158a3;
+        -webkit-transition: .4s;
     transition: .4s;
 }
 
@@ -92,7 +91,7 @@
 }
 
 input:checked+.slider {
-    background-color: rgb(180, 187, 183);
+    background-color: rgb(169 110 151);
 }
 
 input:focus+.slider {
