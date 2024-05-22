@@ -275,12 +275,12 @@
 @media(max-width: 770px) {
 
     .title {
-        font-size: 30px;
+        font-size: 45px;
         padding-top: 0;
     }
 
     .titlespan {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .spanDev {
@@ -292,20 +292,18 @@
     }
 
     svg {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 @media(max-width: 700px) {
 
     .title {
-        font-size: 30px;
         padding-top: 0;
     }
 
     .titlespan {
-        font-size: 40px;
     }
 
     .spanDev {
@@ -314,24 +312,20 @@
 
     .name {
         top: 230px;
-        font-size: 30px;
     }
 
-    svg {
-        width: 50px;
-        height: 50px;
-    }
+   
 }
 
 @media(max-width: 650px) {
 
     .title {
-        font-size: 20px;
+        font-size: 35px;
         padding-top: 0;
     }
 
     .titlespan {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .spanDev {
@@ -340,11 +334,7 @@
 
     .name {
         top: 230px;
-        font-size: 20px;
     }
 
-    svg {
-        width: 40px;
-        height: 40px;
-    }
+  
 }
