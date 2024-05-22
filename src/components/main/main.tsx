@@ -14,6 +14,7 @@ import './section4.css'
 import { ThemeBtns } from '../themeBtns/themeBtns';
 import { useSelector } from 'react-redux';
 import { selectTheme } from '../../store/theme/selectors';
+import { Burger } from '../burger/burger';
 
 
 export const Main = () => {
@@ -89,14 +90,20 @@ export const Main = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleToggle = (isOpen: boolean) => {
+        setIsMenuOpen(isOpen);
+    }
+
     return (
         <div className="main-wrapper">
-            <ThemeBtns />
+            <Burger onToggle={handleToggle}/>
+            <div className={isMenuOpen ? 'menu-wrap' : 'menu-wrap menu-active'}>
+                <ThemeBtns />
+            </div>
             <div className='section1'>
                 <div className={theme === 'dark' ? 'backgr' : 'backgr backgr2'}></div>
-                {/* <img className='imgsect1' src='https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' /> */}
-                {/* <h1>Параллакс эффект</h1>
-  <small>Только CSS, никакого JavaScript</small> */}
                 <div className='section-container container1'>
                     <div className="lolz">
                         <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 256 256" fill="none">

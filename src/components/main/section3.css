@@ -23,7 +23,7 @@
     transform-origin: center;
     /* min-height: 100vh; */
     height: 100%;
-    background-image: url("https://i.ibb.co/4YVVbpT/futuristic-city-sunset-night-sky-vaporwave-synthwave-digital-art-4k-wallpaper-uhdpaper-com-824-3-a.jpg");
+    background-image: url("https://i.ibb.co/G5P5tTy/cyberpunk-sci-fi-night-city-uhdpaper-com-4-K-8-1445.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -329,6 +329,11 @@
     .imgW{
         width: 55px;
         height: 55px;
+        padding: 5px;
+    }
+    .ic1{
+        width: 130%;
+        height: 130%;
     }
 }
 
@@ -340,7 +345,7 @@
         justify-content: center;
         width: 100%;
         margin: 0;
-        padding-top: 120px;
+        padding-top: 100px;
     }
     .stackWrap{
         margin: 0 auto;
@@ -353,5 +358,27 @@
 
     .titlesect3{
         margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .icnw{
+        width: 300px;
+        height: 300px;
+    }
+    .imgW{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .ic1{
+        width: 120%;
+        height: 120%;
+    }
+    .spanlist{
+        font-size: 35px;
+    }
+    .stackName{
+        font-size: 35px;
     }
 }
