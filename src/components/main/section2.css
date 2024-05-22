@@ -16,14 +16,15 @@
 
 
 .windowWrap {
-    max-width: 1300px;
-    max-height: 800px;
+    /* max-width: 1300px; */
+    /* width: 100%; */
+    max-height: 900px;
     height: 100%;
     border-radius: 20px;
     background-color: #1f2124db;
     position: relative;
     top: -50px;
-    margin: 0 30px 0 500px;
+    margin-left: 400px;
     padding: 10px;
     box-sizing: border-box;
     box-shadow: 0 0 22px 20px #74097473;
@@ -120,7 +121,7 @@
 
 @media(max-width: 1690px){
     .windowWrap{
-        height: fit-content;
+        /* height: fit-content; */
     }
 }
 

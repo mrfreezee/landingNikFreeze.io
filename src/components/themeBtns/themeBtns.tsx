@@ -19,12 +19,12 @@ export const ThemeBtns = () => {
     }
     return (
         <div className={theme === 'dark' ? 'themeBtns' : 'themeBtns themeBtnsLight'}>
-            <img className='iconTheme' src='https://cdn-icons-png.freepik.com/256/4307/4307319.png?ga=GA1.1.474256826.1688119391&semt=ais_hybrid' />
+            <img className={theme === 'dark' ? 'iconTheme' : 'iconTheme icon-sun'} src='https://cdn-icons-png.freepik.com/256/4307/4307319.png?ga=GA1.1.474256826.1688119391&semt=ais_hybrid' />
             <label className='switch'>
                 <input type="checkbox" checked={theme === 'dark'} onChange={toggleDarkMode} />
                 <span className='slider'></span>
             </label>
-            <img className='iconTheme' src='https://cdn-icons-png.freepik.com/256/3120/3120499.png?ga=GA1.1.474256826.1688119391&semt=ais_hybrid' />
+            <img className={theme === 'light' ? 'iconTheme' : 'iconTheme icon-moon'} style={{transform: 'scale(90%)'}} src='https://cdn-icons-png.freepik.com/256/3120/3120499.png?ga=GA1.1.474256826.1688119391&semt=ais_hybrid' />
         </div>
     )
 }

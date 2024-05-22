@@ -20,8 +20,8 @@
     height: 100px;
     position: absolute;
     left: 47%;
-    top: 90px;
-    transform: translate(-50%, -50%);
+    top: 5%;
+    transform: translate(-50%, 0);
     z-index: 10;
 }
 
@@ -334,6 +334,9 @@
 
     .name {
         top: 230px;
+    }
+    .lolz{
+        top: 0;
     }
 
   
