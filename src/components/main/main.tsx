@@ -90,7 +90,7 @@ export const Main = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
 
     const handleToggle = (isOpen: boolean) => {
         setIsMenuOpen(isOpen);
