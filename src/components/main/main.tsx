@@ -28,7 +28,7 @@ export const Main = () => {
         threshold: 0.5,
     });
     const { ref: sect2, inView: insect2 } = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
     });
 
     useEffect(() => {

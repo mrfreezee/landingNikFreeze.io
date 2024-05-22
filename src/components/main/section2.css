@@ -120,7 +120,7 @@
 
 @media(max-width: 1690px){
     .windowWrap{
-        height: 700px;
+        height: fit-content;
     }
 }
 
@@ -144,15 +144,23 @@
         padding: 10px 0;
         padding-bottom: 40px;
         opacity: 1;
-        font-size: 60px;
+        font-size: 45px;
     }
     .imgwind{
         animation: none;
         opacity: 1;
+        width: 100%;
+        margin-bottom: 10px;
     }
     .windowWrap{
         position: static;
         margin: 0 auto;
+        max-height: none;
+    }
+    .window{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
     }
 }
 
