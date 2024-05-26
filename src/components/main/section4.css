@@ -4,7 +4,7 @@
     background-color: #1f2124;
     position: relative;
     z-index: 2;
-    top: -10px;
+    /* top: -10px; */
 }
 .container4{
     display: grid;
