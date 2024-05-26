@@ -217,9 +217,10 @@ export const Main = () => {
             </div>
             <div className={theme === 'dark' ? 'section4' : 'section4 section4-theme'}>
             <div className={theme === 'dark' ? 'backgr4' : 'backgr4 backgr4-light'}></div>
-                <video className='video' autoPlay loop muted playsInline>
+                {/* <video className='video' autoPlay loop muted playsInline>
                         <source src="https://cdn.pixabay.com/video/2023/03/09/153957-806571952_large.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
+                    <video className='video' role="application" id="vjs_video_3_html5_api" loop muted autoPlay playsInline src="https://cdn.pixabay.com/video/2023/03/09/153957-806571952_large.mp4"></video>
                 <div className='section-container container4'>
                     <div className='sect4-text'>
                         Лендинги
