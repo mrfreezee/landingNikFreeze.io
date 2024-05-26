@@ -7,13 +7,24 @@ html {
 
 .menu-wrap{
     display: none;
-    background-color: #000000d0;
     width: 300px;
-    height: 200px;
+    height: 250px;
     position: absolute;
     z-index: 15;
-    border-bottom-right-radius: 20px;
     
+}
+
+.menu-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #323232d0;
+    border-bottom-right-radius: 25px;
+}
+
+.menu-light{
+    background-color: #696969d0;
+
 }
 
 @keyframes visible-menu {
@@ -88,6 +99,13 @@ html {
     /* font-size: 90px; */
     font-weight: 700;
     margin-left: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 20px;
+    background-color: #1f2124;
+    position: relative;
 }
 
 

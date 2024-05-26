@@ -98,9 +98,12 @@ export const Main = () => {
 
     return (
         <div className="main-wrapper">
-            <Burger onToggle={handleToggle}/>
+            <Burger onToggle={handleToggle} />
             <div className={isMenuOpen ? 'menu-wrap' : 'menu-wrap menu-active'}>
-                <ThemeBtns />
+                <div className={theme === 'dark' ? 'menu-container' : 'menu-container menu-light'}>
+                    <ThemeBtns />
+                </div>
+
             </div>
             <div className='section1'>
                 <div className={theme === 'dark' ? 'backgr' : 'backgr backgr2'}></div>
@@ -132,7 +135,6 @@ export const Main = () => {
                             </defs>
                         </svg>
                     </div>
-
                     <div className="title-wrapper">
                         <div className='title parallax'>
                             <animated.div style={animatedProps}>
@@ -147,9 +149,7 @@ export const Main = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
 
             <div className={theme === 'dark' ? 'section2' : 'section2 section2Theme'} ref={sect1}>
                 <div className='section-container container2'>
@@ -160,17 +160,13 @@ export const Main = () => {
                             <img className={!isVisible ? 'imgwind' : 'imgwind visible'} src='https://i.ibb.co/bzYfKC8/img2.png' />
                             <img className={!isVisible ? 'imgwind' : 'imgwind visible'} src='https://i.ibb.co/nwTW8gL/img4.png' />
                             <img className={!isVisible ? 'imgwind' : 'imgwind visible'} src='https://i.ibb.co/ryFHbwr/img3.png' />
-
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div className="section3 " ref={sect2}>
-            <div className={theme === 'dark' ? 'backgr' : 'backgr backgr2'}></div>
 
-                {/* <div className='bckgr2'></div> */}
-                {/* <img className='imgsect3' src='https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' /> */}
+            <div className="section3 " ref={sect2}>
+                <div className={theme === 'dark' ? 'backgr' : 'backgr backgr2'}></div>
                 <div className='section-container container3'>
                     <div className="stackWrap">
                         <div className={!isVisible2 ? "list" : 'list visibleLI2'}>
@@ -181,29 +177,23 @@ export const Main = () => {
                             <div className={!isVisible2 ? "listIem" : 'listIem visibleLI'}>
                                 <span className="spanlist">2</span>
                                 <span className='stackName s2'>CSS, <span className='s3'>SCSS</span></span>
-
                             </div>
                             <div className={!isVisible2 ? "listIem" : 'listIem visibleLI'}>
                                 <span className="spanlist">3</span>
                                 <span className='stackName s4'>JavaScript, <span className='s5'>NodeJS</span></span>
-
                             </div>
                             <div className={!isVisible2 ? "listIem" : 'listIem visibleLI'}>
                                 <span className="spanlist">4</span>
                                 <span className='stackName s8'>TypeScript</span>
-
                             </div>
                             <div className={!isVisible2 ? "listIem" : 'listIem visibleLI'}>
                                 <span className="spanlist">5</span>
                                 <span className='stackName s6'>React, <span className='s7'>React-Redux</span></span>
-
                             </div>
                             <div className={!isVisible2 ? "listIem" : 'listIem visibleLI'}>
                                 <span className="spanlist">6</span>
                                 <span className='stackName s9'>Bootstrap</span>
-
                             </div>
-
                         </div>
                     </div>
                     <div className="stackWrap">
@@ -218,17 +208,31 @@ export const Main = () => {
                             <div className="imgW i7" ><img className="icon" style={{ borderRadius: '100%' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoKLph-3Hm6Pi8-mSBxs9mp2ozs8_G-RMaTg3Yh27W4w&s" alt="" /></div>
                             <div className="imgW i8" ><img className="icon" src="https://dh.library.virginia.edu/system/files/styles/large/private/bootstrap-stack.png?itok=b_S8F9nO" alt="" /></div>
                             <div className="imgW i9" ><img className="icon" src="https://static-00.iconduck.com/assets.00/html5-icon-2018x2048-st7q7lm6.png" alt="" /></div>
-
                         </div>
                     </div>
-
-
-
                 </div>
-
             </div>
-            <div className="section4">
 
+            <div className={theme === 'dark' ? 'section4' : 'section4 section4-theme'}>
+            <div className={theme === 'dark' ? 'backgr4' : 'backgr4 backgr4-light'}></div>
+                <video className='video' autoPlay loop muted>
+                        <source src="https://cdn.pixabay.com/video/2023/03/09/153957-806571952_large.mp4" type="video/mp4" />
+                        Ваш браузер не поддерживает тег видео.
+                    </video>
+                <div className='section-container container4'>
+                    <div className='sect4-text'>
+                        Лендинги
+                    </div>
+                    <div className='sect4-text'>
+                        Многостраничные сайты
+                    </div>
+                    <div className='sect4-text'>
+                        Копирование сайтов
+                    </div>
+                    <div className='sect4-text'>
+                        Адаптивная верстка
+                    </div>
+                </div>
             </div>
         </div>
 
