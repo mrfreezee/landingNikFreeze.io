@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/landingNikFreeze.io/static/css/main.a3ec086f.css",
+    "main.css": "/landingNikFreeze.io/static/css/main.1bbe36ff.css",
     "main.js": "/landingNikFreeze.io/static/js/main.79ae5c74.js",
     "static/js/453.baae0ab6.chunk.js": "/landingNikFreeze.io/static/js/453.baae0ab6.chunk.js",
     "index.html": "/landingNikFreeze.io/index.html",
-    "main.a3ec086f.css.map": "/landingNikFreeze.io/static/css/main.a3ec086f.css.map",
+    "main.1bbe36ff.css.map": "/landingNikFreeze.io/static/css/main.1bbe36ff.css.map",
     "main.79ae5c74.js.map": "/landingNikFreeze.io/static/js/main.79ae5c74.js.map",
     "453.baae0ab6.chunk.js.map": "/landingNikFreeze.io/static/js/453.baae0ab6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3ec086f.css",
+    "static/css/main.1bbe36ff.css",
     "static/js/main.79ae5c74.js"
   ]
 }
