@@ -101,6 +101,9 @@ export const Main = () => {
     return (
         
         <div className="main-wrapper">
+            <a href='https://t.me/mrfreeze777'>
+                <img className='tg' src={`${process.env.PUBLIC_URL}/5968804.png`}/>
+            </a>
             <Burger onToggle={handleToggle} />
             <div className={isMenuOpen ? 'menu-wrap' : 'menu-wrap menu-active'}>
                 <div className={theme === 'dark' ? 'menu-container' : 'menu-container menu-light'}>

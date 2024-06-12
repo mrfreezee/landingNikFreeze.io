@@ -4,6 +4,13 @@ html {
     overflow: hidden;
 }
 
+.tg{
+    position: absolute;
+    width: 60px;
+    top: 2%;
+    right: 2%;
+    z-index: 100;
+}
 
 .menu-wrap{
     display: none;
@@ -110,3 +117,22 @@ html {
 
 
 
+@media(max-width: 1200px){
+    .tg{
+        width: 50px;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .tg{
+        width: 40px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .tg{
+        width: 30px;
+    }
+}
